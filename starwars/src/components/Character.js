@@ -1,30 +1,29 @@
 import React from "react";
 import './StarWars.css'
 
+// creates separate card for each character object
 export default function Character(props) {
-
     return (
         <div className="character">
             <h3>{props.char.name}</h3>
             <p>
-                <strong>Birth year:</strong> {props.char.birth_year}
+                <span className='bold-text'>Birth year:</span> {props.char.birth_year}
             </p>
             <p>
-                <strong>Skin color:</strong> {props.char.skin_color}
+                <span className='bold-text'>Skin color:</span> {props.char.skin_color}
             </p>
             <p>
-                <strong>Hair color:</strong> {props.char.hair_color}
+                <span className='bold-text'>Hair color:</span> {props.char.hair_color}
             </p>
             <p>
-                <strong>Eye color:</strong> {props.char.eye_color}
+                <span className='bold-text'>Eye color:</span> {props.char.eye_color}
             </p>
             <p>
-                <strong>Height:</strong> {props.char.height}
+                <span className='bold-text'>Height:</span> {props.char.height}
             </p>
             <p>
-                <strong>Weight:</strong> {props.char.mass}
+                <span className='bold-text'>Weight:</span> {props.char.mass}
             </p>
         </div>
     );
 }
-
