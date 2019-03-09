@@ -8,6 +8,9 @@
     border-radius: 5px 20px 5px;
     color: #443e3e;
 }
+.character:hover {
+    background: rgba(255, 255, 255, .9);
+}
 .character p .bold-text {
     font-weight: bold;
 }
@@ -16,4 +19,17 @@
     font-size: 20px;
     color: rgb(194, 126, 0);
     text-shadow: 1px 1px 5px #ffe4bb;
+}
+@media (max-width: 700px) {
+    .character {width: 40%;}
+}
+@media (max-width: 600px) {
+    .character {
+        width: 60%;
+    }
+}
+@media (max-width: 450px) {
+    .character {
+        width: 70%;
+    }
 }
