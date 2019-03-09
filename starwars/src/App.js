@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Character from './components/Character';
+import CharactersList from './components/CharactersList';
 
 class App extends Component {
   constructor() {
@@ -31,13 +31,14 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div className="characters-list">
+        <CharactersList list={this.state}/>
+        {/* <div className="characters-list">   
           {this.state.starwarsChars.map((char, index) => (<Character char={char} key={index} />))}
-        </div>
+        </div> */}
       </div>
     );
   }
