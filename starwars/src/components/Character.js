@@ -14,7 +14,7 @@ export default class Character extends React.Component {
     
     componentDidMount(){
         // use the node ref to create the animation
-        this.myTween = TweenMax.from(this.myElement, 1.5, {opacity:0, y:500});
+        this.myTween = TweenMax.from(this.myElement, 1.5, {opacity:0, y:500, ease:"Expo.easeOut"});
     }
     render() {
         return (

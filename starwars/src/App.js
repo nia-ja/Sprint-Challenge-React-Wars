@@ -20,7 +20,7 @@ class App extends Component {
   componentDidMount(){
       // use the node ref to create the animation
       this.myTween = TweenMax.from(this.myElement, 2, {x:-1000});
-      this.myTween2 = TweenMax.from(this.myElement2, 2, {opacity:0, y:-100});
+      this.myTween2 = TweenMax.from(this.myElement2, 2, {opacity:0, y:-100, ease: "Back.easeOut"});
   }
   // constructor() {
   //   super();

@@ -29,8 +29,7 @@
     color: white;
 }
 .character:hover {
-    background: rgba(255, 255, 255, .9);
-    transform: scale(1.05)
+    background: rgba(255, 239, 224, 0.7);
 }
 .character.black:hover {
     background: rgba(0, 0, 0, 0.7);
