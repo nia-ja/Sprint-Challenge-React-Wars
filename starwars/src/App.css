@@ -6,3 +6,18 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+nav {
+  width: 100%;
+  background: rgba(194, 126, 0, .7);
+  padding: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #443e3e;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+nav a:hover {
+  color: white;
+}

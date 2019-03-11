@@ -4,7 +4,7 @@ import './StarWars.css'
 // creates separate card for each character object
 export default function Character(props) {
     return (
-        <div className="character">
+        <div className={`character ${props.className}`}>
             <h3>{props.char.name}</h3>
             <p>
                 <span className='bold-text'>Birth year:</span> {props.char.birth_year}
