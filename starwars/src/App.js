@@ -2,10 +2,26 @@ import React, { Component } from 'react';
 import './App.css';
 import CharactersList1 from './components/CharactersList1';
 import CharactersList2 from './components/CharactersList2';
-
 import { BrowserRouter, Route } from 'react-router-dom';
+import {TweenMax} from 'gsap';
+
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    // reference to the DOM node
+    this.myElement = null;
+    this.myElement2 = null;
+    // reference to the animation
+    this.myTween = null;
+    this.myTween2 = null;
+  }
+
+  componentDidMount(){
+      // use the node ref to create the animation
+      this.myTween = TweenMax.from(this.myElement, 2, {x:-1000});
+      this.myTween2 = TweenMax.from(this.myElement2, 2, {opacity:0, y:-100});
+  }
   // constructor() {
   //   super();
     // this.state = {
@@ -37,8 +53,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <h1 className="Header">React Wars</h1>
-          <nav>
+          <h1 ref={h1 => this.myElement2 = h1}className="Header">React Wars</h1>
+          <nav ref={nav => this.myElement = nav}>
             <a href="/">Characters 1</a>
             <a href="/second">Characters 2</a>
           </nav>
