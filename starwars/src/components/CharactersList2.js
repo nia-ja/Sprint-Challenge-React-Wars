@@ -31,7 +31,7 @@ export default class CharactersList extends Component {
     render() {
         return (
             <div className="characters-list">   
-              {this.state.starwarsChars.map((char, index) => (<Character char={char} key={index} className="black" />))}
+              {this.state.starwarsChars.map((char, index) => (<Character char={char} key={`${char.created}${char.edited}`} className="black" />))}
             </div>
         )
     }

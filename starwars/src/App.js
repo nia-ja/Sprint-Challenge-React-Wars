@@ -33,9 +33,7 @@ class App extends Component {
   //       throw new Error(err);
   //     });
   // };
-
   render() {
-    // console.log(this.state);
     return (
       <BrowserRouter>
         <div className="App">
