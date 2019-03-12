@@ -1,0 +1,62 @@
+/* styling for whole characters list */
+.characters-list {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+@media (max-width: 600px) {
+.characters-list {
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+/* styling for each Character card */
+.character {
+    width: 25%;
+    margin: 15px 2%;
+    padding: 15px;
+    background: rgba(255, 255, 255, .6);
+    text-align: left;
+    border-radius: 5px 20px 5px;
+    color: #443e3e;
+}
+.character.black {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+.character:hover {
+    background: rgba(255, 239, 224, 0.7);
+}
+.character.black:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+.character p .bold-text {
+    font-weight: bold;
+}
+.character h3 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(194, 126, 0);
+    text-shadow: 1px 1px 5px #ffe4bb;
+}
+.character.black h3 {
+    text-shadow: none;
+    color: rgb(228, 149, 2);
+}
+@media (max-width: 700px) {
+    .character {width: 40%;}
+}
+@media (max-width: 600px) {
+    .character {
+        width: 60%;
+    }
+}
+@media (max-width: 450px) {
+    .character {
+        width: 70%;
+    }
+}
